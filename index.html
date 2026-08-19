@@ -398,8 +398,7 @@ footer a{color:#E8C877;text-decoration:none}
 <section class="company">
   <div class="wrap">
     <p class="eyebrow">弊社について</p>
-    <h2>制度の言葉と現場の言葉、両方で伴走します。</h2>
-    <dl class="co-grid rv">
+    <dl class="co-grid rv" style="margin-top:8px">
       <dt>会社名</dt><dd>株式会社福祉マネジメント＆デザイン</dd>
       <dt>代表者</dt><dd>代表取締役 水田 智博</dd>
       <dt>保有資格</dt><dd>社会福祉士／准認定ファンドレイザー</dd>
@@ -423,11 +422,16 @@ footer a{color:#E8C877;text-decoration:none}
     <p class="eyebrow">お問い合わせ</p>
     <h2>まずは、詳細のご提案書をご請求ください。</h2>
     <p>本プログラムの詳細資料をお送りします。1法人複数施設での実施など、標準条件と異なる場合のご相談も承ります。</p>
-    <div class="rv" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-      <a class="cta-btn" href="mailto:sw.mandd@gmail.com?subject=令和9年度 介護報酬改定対応プログラム 資料請求">詳細資料を請求する</a>
-      <a class="cta-btn" style="background:transparent;border:2px solid #fff" href="mailto:sw.mandd@gmail.com?subject=令和9年度 介護報酬改定対応プログラム 実施のご相談">自法人での実施について相談する</a>
+    <div class="rv">
+      <a class="cta-btn" href="https://forms.gle/hVDnzYMVoPgrY7cK6" target="_blank" rel="noopener">資料請求・ご相談フォームへ</a>
     </div>
-    <p class="cta-note">✉ <a href="mailto:sw.mandd@gmail.com">sw.mandd@gmail.com</a>　🌐 <a href="https://swmd2023.com">swmd2023.com</a></p>
+    <div style="margin-top:28px;font-size:13.5px;color:#C6CBD8">
+      <p style="display:inline-flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center">
+        <span>フォームが開けない場合は</span>
+        <span id="mail-addr" style="font-size:15px;color:#fff;letter-spacing:.04em">sw.mandd@gmail.com</span>
+        <button id="copy-btn" type="button" style="font-family:inherit;font-size:12.5px;font-weight:700;color:var(--navy);background:#E8C877;border:none;border-radius:2px;padding:7px 16px;cursor:pointer">アドレスをコピー</button>
+      </p>
+    </div>
   </div>
 </section>
 
@@ -441,6 +445,14 @@ footer a{color:#E8C877;text-decoration:none}
 <script>
 const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.12});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const cb=document.getElementById('copy-btn');
+if(cb){cb.addEventListener('click',async()=>{
+  const t='sw.mandd@gmail.com';
+  try{await navigator.clipboard.writeText(t)}catch(e){
+    const ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();
+  }
+  cb.textContent='コピーしました';setTimeout(()=>{cb.textContent='アドレスをコピー'},2000);
+})}
 </script>
 </body>
 </html>
