@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>令和9年度 介護報酬改定 対応プログラム｜株式会社福祉マネジメント＆デザイン</title>
+<meta name="description" content="改定対応を、法人経営を見直す6か月に。特別養護老人ホームを経営する社会福祉法人向け、2026年10月〜2027年3月・全6回の伴走型プログラム。決算分析から2027年度事業計画・実行体制の構築まで。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1C2B55;
+  --navy-deep:#141F3D;
+  --gold:#B8933F;
+  --gold-soft:#F5EEDD;
+  --red:#B0372A;
+  --ink:#26303F;
+  --paper:#FBFAF6;
+  --line:#DCD9CF;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Zen Kaku Gothic New',sans-serif;color:var(--ink);background:var(--paper);line-height:1.95;font-size:16px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+.eyebrow{font-size:12px;letter-spacing:.26em;color:var(--gold);font-weight:700;margin-bottom:16px}
+section{padding:88px 0}
+h2{font-family:'Shippori Mincho',serif;font-size:clamp(24px,4vw,32px);font-weight:600;line-height:1.6;margin-bottom:32px;color:var(--navy)}
+em{font-style:normal;color:var(--red);font-weight:700}
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+header{background:#fff;border-bottom:2px solid var(--navy);padding:14px 0;position:sticky;top:0;z-index:20}
+header .wrap{display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:'Shippori Mincho',serif;font-weight:700;font-size:14px;letter-spacing:.05em;color:var(--navy)}
+.logo small{display:block;font-size:9.5px;letter-spacing:.18em;color:#8A8FA0;font-weight:500}
+.head-cta{font-size:13px;font-weight:700;color:#fff;background:var(--navy);padding:10px 22px;border-radius:2px;text-decoration:none;letter-spacing:.08em;transition:opacity .2s}
+.head-cta:hover{opacity:.85}
+
+/* hero */
+.hero{background:#fff;padding:88px 0 64px;border-bottom:6px solid var(--navy)}
+.hero .year{display:inline-block;background:var(--navy);color:#fff;font-family:'Shippori Mincho',serif;font-size:15px;font-weight:600;letter-spacing:.14em;padding:6px 18px;margin-bottom:24px}
+.hero h1{font-family:'Shippori Mincho',serif;font-size:clamp(32px,5.6vw,52px);font-weight:800;line-height:1.5;color:var(--navy);letter-spacing:.02em;margin-bottom:22px}
+.hero .sub{font-family:'Shippori Mincho',serif;font-size:clamp(17px,2.6vw,22px);font-weight:600;color:var(--red);border-bottom:3px solid var(--red);display:inline-block;padding-bottom:8px;margin-bottom:32px}
+.hero .lead{font-size:15px;color:#4A5261;max-width:640px;margin-bottom:36px}
+.hero-flags{display:flex;gap:12px;flex-wrap:wrap}
+.flag{border:1.5px solid var(--navy);border-radius:2px;padding:8px 18px;font-size:13.5px;letter-spacing:.06em;color:var(--navy);font-weight:700;background:#fff}
+.flag.hot{background:var(--red);border-color:var(--red);color:#fff}
+
+/* background */
+.bg-sec{background:var(--paper)}
+.bg-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.bg-text p{font-size:14.5px;color:#3B4453;margin-bottom:18px}
+.stat-card{background:#fff;border:1px solid var(--line);border-top:4px solid var(--red);border-radius:3px;padding:32px 28px}
+.stat-card h3{font-family:'Shippori Mincho',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:20px}
+.stat-row{display:flex;justify-content:space-between;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line)}
+.stat-row:last-of-type{border-bottom:none}
+.stat-row .label{font-size:13.5px;font-weight:500}
+.stat-row .val{font-family:'Shippori Mincho',serif;font-size:28px;font-weight:700;color:var(--red)}
+.stat-row .val small{font-size:12px;color:#7A8090;font-weight:400;margin-left:4px}
+.stat-note{font-size:11.5px;color:#7A8090;margin-top:16px;line-height:1.7}
+
+/* deadlines (signature) */
+.deadline{background:var(--navy);color:#fff}
+.deadline .eyebrow{color:var(--gold)}
+.deadline h2{color:#fff}
+.deadline .intro{font-size:14.5px;color:#C6CBD8;max-width:720px;margin-bottom:48px}
+.dl-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:56px}
+.dl-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.22);border-radius:3px;padding:32px 28px}
+.dl-card .date{font-family:'Shippori Mincho',serif;font-size:26px;font-weight:700;color:#E8C877;line-height:1.4;margin-bottom:12px}
+.dl-card h3{font-size:16px;font-weight:700;margin-bottom:12px;line-height:1.6}
+.dl-card p{font-size:13.5px;color:#C6CBD8;line-height:1.85}
+.dl-track{position:relative;margin:0 8px}
+.dl-track .bar{height:4px;background:rgba(255,255,255,.2);border-radius:2px;position:relative}
+.dl-track .fill{position:absolute;left:8%;width:76%;top:0;height:4px;background:var(--gold);border-radius:2px}
+.dl-track .pt{position:absolute;top:50%;transform:translate(-50%,-50%);width:12px;height:12px;border-radius:50%;background:var(--gold);border:3px solid var(--navy)}
+.dl-track .pt.end{background:#fff}
+.dl-marks{display:flex;justify-content:space-between;font-size:12px;color:#9AA3B8;margin-top:14px}
+.dl-marks b{color:#fff;display:block}
+.dl-close{margin-top:36px;font-size:14.5px;color:#E8ECF2;max-width:720px}
+
+/* program table */
+.program h2{text-align:center}
+.pg-list{border-top:2px solid var(--navy)}
+.pg-row{display:grid;grid-template-columns:150px 110px 1fr;gap:24px;padding:30px 8px;border-bottom:1px solid var(--line);background:#fff}
+.pg-row:nth-child(even){background:var(--paper)}
+.pg-row .when{font-family:'Shippori Mincho',serif;font-weight:700;color:var(--navy);font-size:15px;line-height:1.6}
+.pg-row .when small{display:block;font-size:11.5px;color:#8A8FA0;font-weight:500;letter-spacing:.08em}
+.pg-row .theme{display:flex;align-items:flex-start}
+.pg-row .theme span{background:var(--gold-soft);color:var(--gold);border:1px solid var(--gold);font-size:12.5px;font-weight:700;padding:4px 12px;border-radius:2px;letter-spacing:.06em;white-space:nowrap}
+.pg-row .body h3{font-size:15.5px;font-weight:700;color:var(--navy);margin-bottom:8px}
+.pg-row .body p{font-size:14px;color:#4A5261}
+
+/* outcome */
+.outcome{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.o-lead{font-size:15px;max-width:700px;margin-bottom:40px}
+.o-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.o-item{display:flex;gap:14px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:20px 22px;font-size:14.5px}
+.o-item .mk{flex:none;width:22px;height:22px;border-radius:50%;background:var(--gold);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;margin-top:4px}
+
+/* deliverables */
+.deliv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.deliv{background:#fff;border:1px solid var(--line);border-left:4px solid var(--navy);border-radius:3px;padding:22px 20px}
+.deliv h3{font-size:14.5px;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.6}
+.deliv p{font-size:13px;color:#4A5261;line-height:1.8}
+
+/* price */
+.price{background:var(--navy);color:#fff}
+.price .eyebrow{color:var(--gold)}
+.price h2{color:#fff}
+.price-card{background:#fff;color:var(--ink);border-radius:4px;padding:48px 44px;box-shadow:0 12px 40px rgba(0,0,0,.25)}
+.price-num{font-family:'Shippori Mincho',serif;font-size:44px;font-weight:700;color:var(--navy);line-height:1.3}
+.price-num small{font-size:15px;font-weight:500;color:#7A8090;margin-left:6px}
+.price-break{font-size:14px;color:#4A5261;margin-bottom:28px}
+.spec{border-top:1px solid var(--line);margin-top:8px}
+.spec-row{display:grid;grid-template-columns:130px 1fr;gap:18px;padding:16px 4px;border-bottom:1px solid var(--line);font-size:14px}
+.spec-row dt{font-weight:700;color:var(--navy)}
+.limit-bar{margin-top:32px;background:var(--red);color:#fff;border-radius:3px;padding:18px 26px;display:flex;gap:20px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.limit-bar .l{font-family:'Shippori Mincho',serif;font-size:18px;font-weight:700}
+.limit-bar .r{font-size:13.5px}
+
+/* flow */
+.flow ol{list-style:none;counter-reset:step;max-width:720px}
+.flow li{counter-increment:step;position:relative;padding:0 0 32px 64px}
+.flow li::before{content:counter(step,decimal-leading-zero);position:absolute;left:0;top:-2px;font-family:'Shippori Mincho',serif;font-size:22px;font-weight:600;color:var(--gold)}
+.flow li::after{content:"";position:absolute;left:16px;top:36px;bottom:4px;width:1px;background:var(--line)}
+.flow li:last-child::after{display:none}
+.flow h3{font-size:15.5px;font-weight:700;margin-bottom:4px;color:var(--navy)}
+.flow p{font-size:14px;color:#4A5261}
+
+/* company */
+.company{background:#fff;border-top:1px solid var(--line)}
+.co-grid{display:grid;grid-template-columns:130px 1fr;gap:16px;max-width:680px;font-size:14.5px}
+.co-grid dt{font-weight:700;color:var(--navy);padding:12px 0;border-bottom:1px solid var(--line)}
+.co-grid dd{padding:12px 0;border-bottom:1px solid var(--line)}
+
+/* notes */
+.notes{background:var(--paper)}
+.notes h2{font-size:20px}
+.notes p{font-size:13px;color:#5A6270;margin-bottom:14px;max-width:820px;line-height:1.9}
+
+/* cta */
+.cta{background:var(--navy);color:#fff;text-align:center}
+.cta h2{color:#fff;margin-bottom:16px}
+.cta p{font-size:14.5px;color:#C6CBD8;max-width:600px;margin:0 auto 36px}
+.cta-btn{display:inline-block;background:var(--red);color:#fff;text-decoration:none;font-weight:700;font-size:16px;letter-spacing:.1em;padding:18px 56px;border-radius:2px;transition:opacity .2s}
+.cta-btn:hover{opacity:.85}
+.cta-note{margin-top:18px;font-size:13px;color:#9AA3B8}
+.cta-note a{color:#E8C877;text-decoration:none}
+
+footer{background:var(--navy-deep);color:#C6CBD8;padding:40px 0;font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+footer .fname{font-family:'Shippori Mincho',serif;color:#fff;font-size:14px;font-weight:600}
+footer .fname small{display:block;font-size:10px;letter-spacing:.14em;color:#8A93AC;font-weight:400}
+footer a{color:#E8C877;text-decoration:none}
+
+.rv{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media (max-width:860px){
+  .bg-grid{grid-template-columns:1fr}
+  .dl-grid{grid-template-columns:1fr}
+  .o-grid{grid-template-columns:1fr}
+  .deliv-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  section{padding:64px 0}
+  .hero{padding:64px 0 52px}
+  .pg-row{grid-template-columns:1fr;gap:10px;padding:24px 4px}
+  .deliv-grid{grid-template-columns:1fr}
+  .price-card{padding:36px 24px}
+  .spec-row{grid-template-columns:100px 1fr;gap:12px}
+  .co-grid{grid-template-columns:100px 1fr}
+  .dl-marks{font-size:10.5px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">福祉マネジメント＆デザイン<small>SOCIAL WELFARE MANAGEMENT &amp; DESIGN</small></div>
+    <a class="head-cta" href="#contact">お問い合わせ</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="year">令和9年度</span>
+    <h1>介護報酬改定<br>対応プログラム</h1>
+    <p class="sub">改定対応を、法人経営を見直す6か月に。</p>
+    <p class="lead">2027年4月、令和9年度介護報酬改定が施行されます。本プログラムは、改定施行までの6か月を逆算で設計し、決算分析による課題抽出から、改定内容を踏まえた2027年度事業計画の策定・実行体制の構築までを、月1回・全6回で伴走するものです。</p>
+    <div class="hero-flags">
+      <span class="flag">対象：特別養護老人ホームを経営する社会福祉法人</span>
+      <span class="flag">2026年10月〜2027年3月・全6回</span>
+      <span class="flag">月1回・貴法人にて訪問実施</span>
+      <span class="flag" style="background:var(--navy);color:#fff;letter-spacing:.04em">経営分析｜BCP｜人材育成｜制度対応｜事業計画｜実行体制</span>
+    </div>
+  </div>
+</div>
+
+<section class="philosophy" style="background:#fff;border-top:1px solid var(--line)">
+  <div class="wrap" style="max-width:780px">
+    <p class="eyebrow" style="text-align:center">私たちが大切にしていること</p>
+    <h2 style="text-align:center;font-size:clamp(26px,4.4vw,36px)">制度は作れても、<br>組織は作れない。</h2>
+    <div class="rv" style="font-size:15px;color:#3B4453">
+      <p style="margin-bottom:18px">制度を整える。計画を作る。委員会を設置する。BCPを更新する。——いずれも必要な取り組みです。しかし、制度や仕組みを整えただけで、組織が変わるわけではありません。</p>
+      <p style="margin-bottom:18px">現場の職員が、その取り組みの意味を理解する。リーダー・中堅層が、自ら考え、周囲を巻き込みながら実践する。管理職が、現場の状況を捉えて判断する。そして経営層が、施設として目指す方向を示す。<em>制度や計画が現場の行動につながって、初めて組織は動き始めます。</em>その状態をつくることこそが「経営」だと、私たちは考えています。</p>
+      <p>2027年4月を、単なる「改定対応のスタート」にするのか。それとも、<em>施設が次のステージへ動き出すスタート</em>にするのか。その違いは、改定後の対応ではなく、2026年10月からの6か月間をどう使うかにあります。</p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-sec">
+  <div class="wrap">
+    <p class="eyebrow">ご提案の背景</p>
+    <h2>今回の改定を、<br>「制度対応」で終わらせない。</h2>
+    <div class="bg-grid">
+      <div class="bg-text rv">
+        <p>今回の改定は、令和8年度の期中改定（改定率＋2.03％）に続くもので、人口減少下のサービス提供体制、生産性向上と処遇改善、制度の持続可能性が主要な検討課題として示されています。これからの時期、「改定内容を確認する」「必要な書類を整える」「新しい制度に対応する」——やるべきことは確実に増えていきます。</p>
+        <p>しかし、BCPを策定した。委員会を設置した。機器を導入した。それでも、現場が変わったとは限りません。私たちは、制度やツールへの対応を<em>きっかけ</em>に、経営・人材・現場の課題をつなぎ、法人を次のステージへ動かすこと——それこそが、この6か月で目指すことだと考えています。</p>
+        <p>もちろん、実務の時間軸もあります。改定内容の答申は例年1月下旬。3月の理事会・評議員会までに事業計画へ織り込むには、それ以前から自法人の課題を把握しておく必要があります。</p>
+      </div>
+      <div class="stat-card rv">
+        <h3>特別養護老人ホームの経営環境<br>（経常増減差額が0未満の拠点割合）</h3>
+        <div class="stat-row">
+          <span class="label">従来型</span>
+          <span class="val">45.2<small>%（前年度比＋3.1pt）</small></span>
+        </div>
+        <div class="stat-row">
+          <span class="label">ユニット型</span>
+          <span class="val">31.5<small>%（同＋0.4pt）</small></span>
+        </div>
+        <p class="stat-note">出典：独立行政法人福祉医療機構「2024年度（令和6年度）決算 特別養護老人ホーム（従来型・ユニット型）の経営分析参考指標の概要について」。同機構の融資先を対象とした集計であり、公立施設は含まれません。同機構は、赤字施設には利用率・利用者単価・加算の算定率が低い傾向があると指摘しています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fit" style="background:#fff;border-top:1px solid var(--line)">
+  <div class="wrap">
+    <p class="eyebrow">こんな法人におすすめします</p>
+    <h2>ひとつでも当てはまれば、<br>この6か月が役に立ちます。</h2>
+    <div class="o-grid rv">
+      <div class="o-item"><span class="mk">✓</span>毎回、改定内容が出てから慌てて対応している</div>
+      <div class="o-item"><span class="mk">✓</span>決算書は作っているが、経営改善に十分活用できていない</div>
+      <div class="o-item"><span class="mk">✓</span>BCPや委員会は整備したが、実際に機能しているか不安がある</div>
+      <div class="o-item"><span class="mk">✓</span>生産性向上を進めたいが、現場の理解が得られていない</div>
+      <div class="o-item"><span class="mk">✓</span>事業計画が「前年踏襲」になっている</div>
+      <div class="o-item"><span class="mk">✓</span>管理職・リーダー層まで経営課題が共有されていない</div>
+    </div>
+  </div>
+</section>
+
+<section class="deadline">
+  <div class="wrap">
+    <p class="eyebrow">2027年4月に照準を合わせる</p>
+    <h2>令和9年度介護報酬改定の施行に、<br>逆算で備える6か月です。</h2>
+    <p class="intro">改定内容の答申は例年1月下旬。答申を待たずに始められる経営分析・BCP・人材育成から着手し、答申後は制度対応と事業計画に集中します。</p>
+    <div class="dl-track rv">
+      <div class="bar">
+        <div class="fill"></div>
+        <span class="pt" style="left:8%"></span>
+        <span class="pt" style="left:84%"></span>
+        <span class="pt end" style="left:100%"></span>
+      </div>
+      <div class="dl-marks">
+        <span><b>2026年10月</b>第1回：経営分析から着手</span>
+        <span><b>2027年3月</b>第6回：実行体制の構築</span>
+        <span><b>2027年4月</b>令和9年度改定 施行</span>
+      </div>
+    </div>
+    <p class="dl-close">施行日に「これから考える」のではなく、<em style="color:#E8C877">事業計画と実行体制が整った状態</em>で4月を迎えることを目指します。</p>
+  </div>
+</section>
+
+<section class="program">
+  <div class="wrap">
+    <h2>── 6か月のプログラム（全6回・月1回訪問）──</h2>
+    <div class="pg-list">
+      <div class="pg-row rv">
+        <div class="when">第1回<small>2026年10月</small></div>
+        <div class="theme"><span>経営分析</span></div>
+        <div class="body">
+          <h3>2025年度決算書の経営分析</h3>
+          <p>制度対応を考える前に、まず経営の現在地を把握します。決算書3期分から収支構造と損益分岐点を可視化し、経営課題を抽出して優先順位を付けます。処遇改善加算Ⅰロ・Ⅱロを算定されている場合は要件の充足状況もここで確認し、2027年3月末までの逆算工程を作成します。</p>
+        </div>
+      </div>
+      <div class="pg-row rv">
+        <div class="when">第2回<small>2026年11月</small></div>
+        <div class="theme"><span>BCP</span></div>
+        <div class="body">
+          <h3>BCPシミュレーション研修</h3>
+          <p>BCPは、作成して保管しておくだけでは、いざという時に機能するとは限りません。カード型演習により、災害・感染症発生時の判断を管理者・リーダー層で実地に訓練し、「計画書に書いてあること」と「現場でできること」のズレを検出します。見えてきた課題を計画と体制に反映し、「作成したBCP」を「機能するBCP」へ近づけます。</p>
+        </div>
+      </div>
+      <div class="pg-row rv">
+        <div class="when">第3回<small>2026年12月</small></div>
+        <div class="theme"><span>人材育成</span></div>
+        <div class="body">
+          <h3>リーダー・中堅層研修</h3>
+          <p>制度や仕組みを実際に動かすのは、現場の「人」です。改定の方向性を現場の言葉に翻訳し、リーダー・中堅層が自分の言葉で職員へ説明できる状態をつくります。生産性向上の取組を「やらされ仕事」にしないための当事者化も、この回で扱います。</p>
+        </div>
+      </div>
+      <div class="pg-row rv">
+        <div class="when">第4回<small>2027年1月</small></div>
+        <div class="theme"><span>制度対応</span></div>
+        <div class="body">
+          <h3>介護報酬改定研修</h3>
+          <p>答申により確定した改定内容を解説し、貴法人の各サービスへの影響を試算します。改定を「知る」だけで終わらせず、自施設の課題と結びつけて、次年度に取り組むべきことを明確にします。※答申時期の都合により、1月下旬の実施を想定しています。</p>
+        </div>
+      </div>
+      <div class="pg-row rv">
+        <div class="when">第5回<small>2027年2月</small></div>
+        <div class="theme"><span>経営計画</span></div>
+        <div class="body">
+          <h3>2027年度事業計画の策定</h3>
+          <p>第1回で抽出した経営課題と、第4回で試算した改定影響を織り込み、数値計画と行動計画がつながった事業計画を策定します。計画を作ること自体を目的にせず、「誰が、何に取り組むのか」まで具体化し、理事会・評議員会に諮る資料の形まで伴走します。</p>
+        </div>
+      </div>
+      <div class="pg-row rv">
+        <div class="when">第6回<small>2027年3月</small></div>
+        <div class="theme"><span>実行体制</span></div>
+        <div class="body">
+          <h3>2027年度の実行体制の構築</h3>
+          <p>事業計画は、策定して終わりではありません。2027年4月に義務化される委員会について規程・構成メンバー・開催手順・記録様式を整備し、4月時点で実働している状態をつくります。生産性向上推進体制加算を算定する場合は、要件充足の確認と届出・実績報告の準備までこの回で整えます。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="outcome">
+  <div class="wrap">
+    <p class="eyebrow">6か月後に到達する状態</p>
+    <h2>目指すのは、書類が揃った状態ではなく、<br>2027年4月から動ける状態です。</h2>
+    <p class="o-lead">6か月を終えた時点で、以下が整っていることを目標とします。これらは成果物の点数では測れないため、各回の冒頭で前月からの進捗を確認しながら進めます。</p>
+    <div class="o-grid rv">
+      <div class="o-item"><span class="mk">✓</span>法人の経営課題が、優先順位を付けて整理されている</div>
+      <div class="o-item"><span class="mk">✓</span>2027年度に取り組む重点課題が絞り込まれている</div>
+      <div class="o-item"><span class="mk">✓</span>BCP・生産性向上の取組が、経営課題とつながって位置づけられている</div>
+      <div class="o-item"><span class="mk">✓</span>リーダー・中堅層が、改定の内容を自分の言葉で説明できる</div>
+      <div class="o-item"><span class="mk">✓</span>2027年度事業計画に、具体的な取組と数値が落ちている</div>
+      <div class="o-item"><span class="mk">✓</span>4月から動くための役割分担と会議体が決まっている</div>
+    </div>
+  </div>
+</section>
+
+<section class="deliverables">
+  <div class="wrap">
+    <p class="eyebrow">主な成果物</p>
+    <h2>組織を動かすために、<br>これらを形にして残します。</h2>
+    <div class="deliv-grid rv">
+      <div class="deliv"><h3>経営分析報告書</h3><p>収支構造の可視化、経営課題の抽出と優先順位付け</p></div>
+      <div class="deliv"><h3>BCP課題整理シート</h3><p>演習で検出した計画と運用のズレの一覧</p></div>
+      <div class="deliv"><h3>研修資料一式</h3><p>リーダー・中堅層研修／介護報酬改定研修</p></div>
+      <div class="deliv"><h3>2027年度事業計画書ドラフト</h3><p>数値計画・行動計画を接続した形で</p></div>
+      <div class="deliv"><h3>委員会 規程・様式一式</h3><p>設置要綱、議事録様式、年間開催計画</p></div>
+      <div class="deliv"><h3>期間中のメール相談</h3><p>定例の間も、判断に迷う場面でご相談いただけます</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="price" id="price">
+  <div class="wrap">
+    <p class="eyebrow">料金・実施条件</p>
+    <h2 style="color:#F2F4F1">本プログラムは、<br>「研修6回セット」ではありません。</h2>
+    <p style="font-size:14.5px;color:#C6CBD8;max-width:720px;margin:-8px 0 40px">経営分析・BCP演習・リーダー育成・改定影響分析・事業計画策定・実行体制構築に、報告書・計画書ドラフト・委員会規程様式・研修資料・期間中のメール相談まで含む、<em style="color:#E8C877">月額10万円（税込11万円）で外部の経営伴走者を6か月入れる</em>プログラムです。</p>
+    <div class="price-card rv">
+      <p class="price-num">総額 600,000<small>円（税込660,000円）／6か月</small></p>
+      <p class="price-break">月額100,000円（税込110,000円）× 6回　※毎月末締め・翌月末日までにお振込み（月次請求）</p>
+      <dl class="spec">
+        <div class="spec-row"><dt>対象</dt><dd>特別養護老人ホームを経営する社会福祉法人（1法人1施設を標準とします。1法人複数施設をご希望の場合は、ご相談ください）</dd></div>
+        <div class="spec-row"><dt>実施形式</dt><dd>月1回・貴法人にてお伺いして実施（1回あたり2〜3時間を想定）</dd></div>
+        <div class="spec-row"><dt>含まれるもの</dt><dd>訪問6回、経営分析報告書1点、事業計画書ドラフト1点、委員会規程・様式一式、研修資料一式、期間中のメール相談</dd></div>
+        <div class="spec-row"><dt>別途申受</dt><dd>旅費交通費（実費）、研修受講者数が50名を超える場合の会場・資料費</dd></div>
+        <div class="spec-row"><dt>契約期間</dt><dd>2026年10月〜2027年3月（6か月）</dd></div>
+      </dl>
+      <p style="font-size:12px;color:#7A8090;margin-top:16px">※上記の成果物点数を超えるご依頼、および第三者への提出を前提とした資料作成については、別途お見積りとさせていただきます。</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="flow">
+  <div class="wrap">
+    <p class="eyebrow">ご契約までの流れ</p>
+    <h2>10月の第1回まで、4つのステップです。</h2>
+    <ol>
+      <li class="rv"><h3>ご提案内容のご確認・ご質問（〜9月上旬）</h3><p>お問い合わせいただいた法人様には、詳細のご提案書をお送りします。</p></li>
+      <li class="rv"><h3>貴法人内でのご決裁（〜9月中旬）</h3><p>理事会・法人内での検討に必要な補足資料があればご用意します。</p></li>
+      <li class="rv"><h3>業務委託契約の締結・年間日程の確定（9月下旬）</h3><p>6回分の訪問日程をこの時点で確定します。</p></li>
+      <li class="rv"><h3>第1回実施（10月）</h3><p>事前に決算書3期分をご共有ください。</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="company">
+  <div class="wrap">
+    <p class="eyebrow">弊社について</p>
+    <h2>制度の言葉と現場の言葉、両方で伴走します。</h2>
+    <dl class="co-grid rv">
+      <dt>会社名</dt><dd>株式会社福祉マネジメント＆デザイン</dd>
+      <dt>代表者</dt><dd>代表取締役 水田 智博</dd>
+      <dt>保有資格</dt><dd>社会福祉士／准認定ファンドレイザー</dd>
+      <dt>事業内容</dt><dd>社会福祉法人・介護事業者向け経営コンサルティング、組織開発、BCP策定支援、研修設計</dd>
+      <dt>ウェブサイト</dt><dd><a href="https://swmd2023.com" style="color:var(--navy)">https://swmd2023.com</a></dd>
+    </dl>
+  </div>
+</section>
+
+<section class="notes">
+  <div class="wrap">
+    <p class="eyebrow">ご留意事項</p>
+    <h2>正確にお伝えしたいこと。</h2>
+    <p>令和9年度介護報酬改定の内容および審議日程は、本ページ作成時点で確定していません。記載している実施月・研修内容は、社会保障審議会介護給付費分科会の審議状況および答申時期により調整させていただく場合があります。特に第4回（介護報酬改定研修）は、確定内容を扱う必要があるため、答申後の1月下旬実施を想定しています。答申が例年より遅れた場合は、第4回・第5回の実施順および時期をあらためてご相談いたします。</p>
+    <p>本ページは2026年8月時点の公表情報に基づいて作成しています（2026.08版）。今後の通知・Q&amp;Aの発出により取扱いが変わる可能性があります。加算・委員会等の制度要件は、必ず所管自治体・最新の通知でご確認ください。</p>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="wrap">
+    <p class="eyebrow">お問い合わせ</p>
+    <h2>まずは、詳細のご提案書をご請求ください。</h2>
+    <p>本プログラムの詳細資料をお送りします。1法人複数施設での実施など、標準条件と異なる場合のご相談も承ります。</p>
+    <div class="rv" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+      <a class="cta-btn" href="mailto:sw.mandd@gmail.com?subject=令和9年度 介護報酬改定対応プログラム 資料請求">詳細資料を請求する</a>
+      <a class="cta-btn" style="background:transparent;border:2px solid #fff" href="mailto:sw.mandd@gmail.com?subject=令和9年度 介護報酬改定対応プログラム 実施のご相談">自法人での実施について相談する</a>
+    </div>
+    <p class="cta-note">✉ <a href="mailto:sw.mandd@gmail.com">sw.mandd@gmail.com</a>　🌐 <a href="https://swmd2023.com">swmd2023.com</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fname">株式会社 福祉マネジメント＆デザイン<small>SOCIAL WELFARE MANAGEMENT &amp; DESIGN</small></div>
+    <div>© SWMD　2026.08版</div>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
